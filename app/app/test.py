@@ -16,4 +16,3 @@ class CalcTests(SimpleTestCase):
         # Test subtracting numbers from each other
         res = calc.subtract(10, 5)
         self.assertEqual(res, 5)
-
