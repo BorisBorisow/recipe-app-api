@@ -136,11 +136,10 @@ class PrivateRecipeTest(TestCase):
 
     def test_full_update(self):
         """Test full update of recipe."""
-        original_link = 'https://example.com/recipe.pdf'
         recipe = create_recipe(
             user=self.user,
             title="Sample recipe title",
-            link=original_link,
+            link="https://example.com/recipe.pdf",
             description="Sample recipe description"
         )
         payload = {"title": "New recipe title", "link": "https://example.com/new-recipe.pdf",
